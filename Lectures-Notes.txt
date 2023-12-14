@@ -1,0 +1,21 @@
+Notes:
+
+JSX is a tool that allows writing html and javascript 
+example const element = <p> ok! </p>  babel does all the work for us
+
+it is possible to write react without JSX, but will look verbosed and hard to understand
+
+Always remember to close your tag
+
+You cannot return multiple elements, you should wrap everything in a div 
+
+BABEL is a JavaScript Compiler
+
+
+PROPS:
+props are for configuring your component
+props are immutable
+props can be strings
+for ther types, embed JS expression using the curly braces: salary={100} hobbies:{["dancing", "reading"]}
+
+components can specify default values for missing props
