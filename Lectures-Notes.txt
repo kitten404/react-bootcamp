@@ -19,3 +19,10 @@ props can be strings
 for ther types, embed JS expression using the curly braces: salary={100} hobbies:{["dancing", "reading"]}
 
 components can specify default values for missing props
+
+
+to create react app
+npm install -g create-react-app
+create-react-app my-app
+
+npm start //to start your app
