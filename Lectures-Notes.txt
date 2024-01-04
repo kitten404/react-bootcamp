@@ -26,3 +26,15 @@ npm install -g create-react-app
 create-react-app my-app
 
 npm start //to start your app
+
+CONVENTIONS
+each component goes in a separe file and capitalized
+example: src/Person.js, src/Pet.js
+
+components extends componento imported from react
+
+the top object is App, you can change it, but it is assumed by skeleton
+
+make a cdd file for each react component
+import it st the top of the componenet
+conventiona to addd className="NameComponent"
