@@ -10,6 +10,7 @@ Always remember to close your tag
 You cannot return multiple elements, you should wrap everything in a div 
 
 BABEL is a JavaScript Compiler
+Babel is a JavaScript compiler that converts modern JavaScript code into a version compatible with all browsers
 
 
 PROPS:
@@ -27,6 +28,8 @@ create-react-app my-app
 
 npm start //to start your app
 
+set NODE_OPTIONS=--openssl-legacy-provider
+
 CONVENTIONS
 each component goes in a separe file and capitalized
 example: src/Person.js, src/Pet.js
@@ -38,3 +41,34 @@ the top object is App, you can change it, but it is assumed by skeleton
 make a cdd file for each react component
 import it st the top of the componenet
 conventiona to addd className="NameComponent"
+
+States
+The state of the client interface is not aleays tied directly to whts going on in the server side
+state is designed to constantly change in response to events
+a state it is always an object(POJO), since youll want to keep track of sveral keys/values
+it needs to hava an initial state as soon as the component is created
+you dont need to initialize props for example
+you always use this.setState({score:0}); but to not call it on the constructor. The setState change is asyncrounous and the application will be re-rendered
+
+React Events
+examples: OnClick, OnMouseOver, OnSubmit, OnKeyDown, onKeyUp, OnKeyPress
+
+The keyword this
+you will lose this context when yu pass a function as a handler
+example using this in a function will not work as expected
+
+to fix this 
+use bind
+use arrow function
+bind in constructor
+You can also bind with argumets -> how ? -> {this.anyFunction.bind(this, arg)} or {() => this.anyFunction(c)}
+
+everytime you call bind it is a brand new function
+
+passing functions to child components
+children are often not stateful, but need to tell parents to change state
+
+data flow:
+parent passes a function down to the children, the parent re render to change state when needed
+pass the function to the children as a prop and always bind at higher level
+parent function action/ child function handleAction
