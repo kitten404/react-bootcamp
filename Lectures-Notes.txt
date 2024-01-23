@@ -76,3 +76,28 @@ parent function action/ child function handleAction
 Forms:
 Html form elements work diferently than other dom elements in react 
 states = has acces to the data the user entered
+
+Lifecicyle
+mounting
+updating
+unmounting
+
+
+initializa state = constructor();
+it tells react what should be displayed = render()
+
+componentDidMount() - after the first time the component render, you can also make ajax call
+componentDidUpdate() - after every render occurs implement any side effect operation auto saving, uncontrolled component 
+componentWillUnmount() - right before the component is destroyed, a place to do some clean up 
+
+server side routing 
+the server side figures the route -> server decides what html to return base on URL requested, entire page refreshes 
+
+client side routing
+route it through on click which will go to the componente based on click #section1 #section2 etccc...
+we can update through state if we want, but we will not get history of where weve been - url stays the same 
+
+lib - react-router-dom
+
+Hooks 
+they let you use state and other react features without writing a class
